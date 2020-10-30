@@ -6,6 +6,7 @@ let lowerCaseArray = ["abcdefghijklmnopqrstuvwxyz"];
 let upperCaseArray = lowerCaseArray.to;
 let numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let specialCharArray = "!@#$%^&*()";
+let allArrays = ""
 //let allArrays = [...lowerCaseArray, ...upperCaseArray, ...specialCharArray]
 
 /*
@@ -25,19 +26,21 @@ generateIt.addEventListener("click", function(event) { // adds click function
   let sCChoice = confirm("What about special characters?")
   //here is the function determining which arrays will be used based on user input
   if(lCChoice === true){
-    lowerCaseArray == true    
+    let chosenArrays = allArrays + lowerCaseArray 
     console.log("You've opted for lower case")
+    console.log(chosenArrays)
   }
   if(uCChoice ===true){
-    upperCaseArray == true
+    let chosenArrays = allArrays + upperCaseArray 
     console.log("you've opted for upper case")
+    console.log(chosenArrays)
   }
   if(nChoice ===true){
-    numberArray == true
+    let chosenArrays = [...allArrays, ...numberArray ]
     console.log("you've opted for numbers")
   }
   if(sCChoice ===true){
-    specialCharArray == true
+    let chosenArrays = allArrays + specialCharArray 
     console.log("you've opted for special characters")
   }    
   else if (lCChoice === false && uCChoice ===false && nChoice ===false && sCChoice ===false){
@@ -45,6 +48,9 @@ generateIt.addEventListener("click", function(event) { // adds click function
    
   }
   console.log("----------")
+  console.log(chosenArrays)
+
+  
   
   //used this to see if == added the true statement to the arrays but no such luck. Am I seriously gonna do each one manually? Serious consideration at this point.
   //console.log(numberArray)
@@ -59,13 +65,13 @@ generateIt.addEventListener("click", function(event) { // adds click function
 
 
 })
-  
+  /*
 for (let i = 0; i < 10; i++) {
   let number = Math.random(lowerCaseArray)
   console.log(number)
   Math.floor(random()*lowerCaseArray.length)
 }
-
+*/
 
 // #password
 //  document.getElementById("password").innerHTML= passwordOutput()
