@@ -2,11 +2,15 @@
 
 // these are my base arrays
 var generateBtn = document.querySelector("#generate");
-let lowerCaseArray = ["abcdefghijklmnopqrstuvwxyz"];
-let upperCaseArray = lowerCaseArray.to;
-let numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-let specialCharArray = "!@#$%^&*()";
-let allArrays = ""
+const lowerCaseArray = ["abcdefghijklmnopqrstuvwxyz"];
+const upperCaseArray = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+const numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const specialCharArray = "!@#$%^&*()";
+let chosenArrays;
+
+let allArrays = [...lowerCaseArray, ...upperCaseArray, ...numberArray, ...specialCharArray]
+console.log(allArrays)
+
 //let allArrays = [...lowerCaseArray, ...upperCaseArray, ...specialCharArray]
 
 /*
@@ -26,18 +30,20 @@ generateIt.addEventListener("click", function(event) { // adds click function
   let sCChoice = confirm("What about special characters?")
   //here is the function determining which arrays will be used based on user input
   if(lCChoice === true){
-    let chosenArrays = allArrays + lowerCaseArray 
+    let chosenArrays = this + lowerCaseArray //So what do I use if not let? I want to keep updating chosenArrays as the function continues. Bad approach?
     console.log("You've opted for lower case")
     console.log(chosenArrays)
   }
   if(uCChoice ===true){
-    let chosenArrays = allArrays + upperCaseArray 
+    let chosenArrays = this + upperCaseArray;
     console.log("you've opted for upper case")
     console.log(chosenArrays)
   }
   if(nChoice ===true){
-    let chosenArrays = [...allArrays, ...numberArray ]
+    let chosenArrays = [...this, ...numberArray]
     console.log("you've opted for numbers")
+    console.log(chosenArrays)
+    
   }
   if(sCChoice ===true){
     let chosenArrays = allArrays + specialCharArray 
