@@ -9,7 +9,7 @@ What is expected includes:
 -create a for loop to spit out specified amount of characters based on merged arrays
 
 
-
+///[screenshot](./corefiles/assets/passwordGeneratorSnip.png)
 
 
 
@@ -19,6 +19,7 @@ What is expected includes:
 //This. Is. Hard. My main grievance is selecting the arrays based on input. Maybe I'm looking at it at the wrong
 angle but it has proven quite the conundrum/issue/pain in the ass. I get the rest of it, easy, but this part really 
 leaves me stumped. 
+
 
 
 

@@ -66,46 +66,25 @@ generateIt.addEventListener("click", function(event) { // adds click function
   }
 
   document.getElementById("password").innerHTML= passwordProgress
-  
-  
-  //used this to see if == added the true statement to the arrays but no such luck. Am I seriously gonna do each one manually? Serious consideration at this point.
-  //console.log(numberArray)
-  
-  
-  //MY. MAIN. PROBLEM.
-  //Now let's cherry pick the arrays marked true 
-
-
 })
-
-
-
-
-
-
-
-
- //#password
-
-
-
-
-
-
-
-
-
-
-
-  /*
-  // felt like doing every single out come was cop out and will make this code bloated
-
-  if(lCChoice === true && uCCase === true && nChoice === true && sCChoice === true){
-    const allSelected = [...lCChoice, ...uCCase, ...nChoice, sCChoice];
-  }
-  else if(lCChoice ===)
   
-  document.querySelector("#tip-amount")
+  
+
+
+//used this to see if == added the true statement to the arrays but no such luck. Am I seriously gonna do each one manually? Serious consideration at this point.
+//console.log(numberArray)
+//MY. MAIN. PROBLEM.
+//Now let's cherry pick the arrays marked true 
+//#password
+/*
+// felt like doing every single out come was cop out and will make this code bloated
+
+if(lCChoice === true && uCCase === true && nChoice === true && sCChoice === true){
+  const allSelected = [...lCChoice, ...uCCase, ...nChoice, sCChoice];
+}
+else if(lCChoice ===)
+  
+document.querySelector("#tip-amount")
 
 
 
